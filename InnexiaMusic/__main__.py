@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from youtubesearchpython import VideosSearch
 
 from InnexiaMusic.Helpers.Logging import *
-from InnexiaMusic.Helpers.PyTgCalls.AsuX import run
+from InnexiaMusic.Helpers.PyTgCalls.Music import run
 from InnexiaMusic.modules import ALL_MODULES
 from InnexiaMusic.Helpers.Inline import private_panel
 from InnexiaMusic.Helpers.Database import get_active_chats, remove_active_chat, add_served_user
