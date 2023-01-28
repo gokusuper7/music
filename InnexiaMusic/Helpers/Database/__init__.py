@@ -10,9 +10,6 @@ from .gban import (add_gban_user, get_gbans_count, is_gbanned_user,
 
 from .onoff import add_off, add_on, is_on_off
 
-from .pmpermit import (approve_pmpermit, disapprove_pmpermit,
-                       is_pmpermit_approved)
-
 from .queue import (add_active_chat, get_active_chats, is_active_chat,
                     is_music_playing, music_off, music_on, remove_active_chat)
 
