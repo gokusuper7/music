@@ -12,7 +12,7 @@ from youtubesearchpython import VideosSearch
 
 from InnexiaMusic.Helpers.Logging import *
 from InnexiaMusic.Helpers.PyTgCalls.AsuX import run
-from InnexiaMusic.Modules import ALL_MODULES
+from InnexiaMusic.modules import ALL_MODULES
 from InnexiaMusic.Helpers.Inline import private_panel
 from InnexiaMusic.Helpers.Database import get_active_chats, remove_active_chat, add_served_user
 from InnexiaMusic import (ASSID, ASSMENTION, ASSNAME, ASSUSERNAME, BOT_ID, BOT_NAME, BOT_USERNAME, SUDO_USERS, F_OWNER, db, app, Ass)
@@ -49,7 +49,7 @@ async def InnexiaBot():
         await asyncio.sleep(1.2)
         for all_module in ALL_MODULES:
             imported_module = importlib.import_module(
-                "InnexiaMusic.Modules." + all_module
+                "InnexiaMusic.modules." + all_module
             )
             if (
                 hasattr(imported_module, "__MODULE__")
