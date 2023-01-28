@@ -89,7 +89,7 @@ async def InnexiaBot():
             mkdir("Cache")
         console.print("└ [green]All Files Updated and restored")
         await asyncio.sleep(0.1)
-        ___ = await startup_edit(all_over, "**» ɢᴇᴛᴛɪɴɢ ᴄʟɪᴇɴᴛs ɪɴғᴏ...**")
+        ___ = await startup_edit(all_over, "**» extracting client information...**")
         console.print("\n┌ [red]extracting client information...")
         getme = await app.get_me()
         getass = await Ass.get_me()
